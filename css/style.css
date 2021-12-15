@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+body {
+    background-color: gold;
+    margin: 20px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+
+}
+
+img {
+    height: 300px;
+    margin: 50px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto auto auto auto;
+}
+
+#showMeTheMoneyImageBtn {
+    background-color: #85BB65;
+    border: 6px solid white;
+    border-radius: 40px;
+    color: white;
+    font-family: 'Ceviche One';
+    font-size: 5rem;
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto auto auto auto;
+    top: 400px;
+}
+
+#showMeTheMoneyImageBtn:active {
+    background-color: #85BB65;
+    border: 6px solid #85BB65;
+    border-radius: 40px;
+    color: white;
+    font-family: 'Ceviche One';
+    font-size: 5rem;
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto auto auto auto;
+    top: 400px;
+}
