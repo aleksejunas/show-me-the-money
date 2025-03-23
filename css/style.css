@@ -56,19 +56,23 @@ img {
   color: white;
   font-family: "Ceviche One", cursive;
   font-size: clamp(2.5rem, 5vw, 5rem);
-  padding: 15px 20px; /* Horizontal padding to prevent text cropping */
-  width: 100%;
-  max-width: 800px;
+  padding: 20px 30px; /* More vertical padding */
+  width: 80%; /* Reduced from 100% to 80% */
+  max-width: 600px; /* Reduced from 800px to 600px */
   margin: 0 auto;
   cursor: pointer;
   transition: all 0.2s ease;
-  /* Use min-height instead of fixed height */
-  min-height: 120px;
-  height: auto; /* Allow height to grow if needed */
+  /* Increase min-height for taller button */
+  min-height: 150px; /* Increased from 120px */
+  height: auto;
   align-self: center;
   /* Improve text handling */
   line-height: 1.1;
   overflow: visible;
+  /* Optional: If you want to center text vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #showMeTheMoneyImageBtn:active {
@@ -116,9 +120,10 @@ img {
 /* Media queries for different screen sizes */
 @media (max-width: 768px) {
   #showMeTheMoneyImageBtn {
-    padding: 15px;
+    padding: 15px 25px;
     font-size: clamp(2rem, 4vw, 4rem);
-    min-height: 90px;
+    min-height: 120px; /* Adjusted for tablet */
+    width: 85%; /* Slightly wider on tablets */
   }
 
   #imageOutputDiv {
@@ -138,10 +143,11 @@ img {
   }
 
   #showMeTheMoneyImageBtn {
-    padding: 10px 15px; /* More horizontal padding on mobile */
+    padding: 15px 20px;
     font-size: clamp(1.8rem, 6vw, 2.5rem);
-    min-height: 70px;
-    border-width: 4px; /* Slightly thinner border on mobile */
+    min-height: 100px; /* Adjusted for mobile but still taller */
+    width: 90%; /* Wider on mobile for better touch target */
+    border-width: 4px;
   }
 
   #imageOutputDiv {
